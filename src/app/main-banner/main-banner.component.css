@@ -1,11 +1,31 @@
-.section_images {
+.section_images img {
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   top: 0;
   left: -100%;
   right: -100%;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+  max-height: 500px;
+
+}
+
+.section_body {
+  width: 100%;
+  padding-top: 100%;
+}
+
+.section_body h2 h4 {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 
 .hidden {
     display: none !important;
