@@ -1,5 +1,8 @@
 Specs:
 
+Goal:
+Friday - finish a functional nav bar
+
 Components In Progress:
 - main banner: text does not stay in relative position to image when screen resize
 
