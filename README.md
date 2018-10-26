@@ -1,5 +1,9 @@
 Specs:
 
+Components In Progress:
+- main banner: text does not stay in relative position to image when screen resize
+
+
 Components - Homepage -
  - top nav bar that always stays (keep in main index)
  - small blue bar with latest deals (in main index) goes away after scroll down
