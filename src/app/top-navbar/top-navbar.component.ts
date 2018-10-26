@@ -10,14 +10,15 @@ export class TopNavbarComponent {
 
 
 
-@HostListener('window:scroll', ['$event'])
-onWindowScroll($event) {
+@HostListener('window:scroll') onWindowScroll(event) {
     console.log("scrolling...");
     console.log(window.scrollY);
     if(window.scrollY < 2){
-      return "toolbar_fixed";
+      // alert("test");
+      return "test";
     } else {
-      return "";
+      // alert("test2");
+      return "test2";
     }
 }
 }
