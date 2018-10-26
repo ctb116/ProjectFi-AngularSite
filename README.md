@@ -1,30 +1,24 @@
-Specs:
-
 Goal:
-Friday - finish a functional nav bar
+Friday 10/23/18 - finish navbar, particularly hide/show of promotional message based on scroll location (done)
 
-Components In Progress:
-## main-banner: text does not stay in relative position to image when screen resize
+## Components In Progress:
+###### 1) main-banner: text does not stay in relative position to image when screen resize
 
-## top-navbar: scroll position alters the class value but transition is jarring
+###### 2) top-navbar: scroll position alters the class value but the transition is too jarring. (maybe try Angular animations?)
 
-NavBar Component Specs:
-- navbar changes based on screen size
-  on desktop view it goes (logo, Plan, Phones, Coverage, FAQ, FI FIT QUIZ, Sign in, Get Fi)
-- if navbar is less than desktop size the above (expect for logo and the buttons go away)
-  a menu icon appears on the left side of the fi_logo
-  clicking on that icon brings up remove menu items along with the buttons
-- navbar is locked at the top of the screen when scrolling
-- blue promotion bar is not locked but is aboe the navbar
-- if menu icon is clicked user can only scroll in that menu, the main view is greyout and locked
+Components - Homepage:
 
+_NavBar Component Specs:</br>
+- navbar changes based on screen size: </br>
+    navbar on desktop view looks like (logo, [Plan, Phones, Coverage, FAQ, Fi FIT QUIZ]links, [Sign in, Get Fi]buttons) </br>
+    if navbar is less than desktop size the above (expect logo and Get Fi button) is removed </br>
+    a menu icon appears on the left side of the logo in tablet and mobile view </br>
+    clicking that menu icon opens a side menu containing removed items mentioned above
+    While in the side menu, the main window is locked and dimmed. Scrolling is only allowed in the side menu while it's opened.
+- navbar is fixed at the top of the screen when scrolling down </br>
+  if user is at top of page, the navbar is offset and blue promotional banner appears</br>_
 
-
-
-Components - Homepage -
- - top nav bar that always stays (keep in main index)
- - small blue bar with latest deals (in main index) goes away after scroll down
-
+At-a-glance Component Specs:
  - top big image on every page (expect FAQ)
  -- has auto filtering through images with additional arrow click
 
@@ -43,38 +37,3 @@ Components - Homepage -
 
  Implementing multiple pages
  - ng methods in the compoents that return which text and images to display given a page click input
-
-
-
-
-
-
-
-
-# ProjectFi
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
