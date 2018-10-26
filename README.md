@@ -4,7 +4,9 @@ Goal:
 Friday - finish a functional nav bar
 
 Components In Progress:
-- main banner: text does not stay in relative position to image when screen resize
+## main-banner: text does not stay in relative position to image when screen resize
+
+## top-navbar: scroll position alters the class value but transition is jarring
 
 NavBar Component Specs:
 - navbar changes based on screen size

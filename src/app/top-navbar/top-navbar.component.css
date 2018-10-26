@@ -34,6 +34,7 @@ to the top and is fixed */
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffff;
+  z-index: 99999;
 }
 
   .toolbar_offset {
@@ -41,6 +42,7 @@ to the top and is fixed */
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffff;
+  z-index: 99999;
 }
 
 .toolbar_offset img {
