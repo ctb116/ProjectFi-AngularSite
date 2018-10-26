@@ -12,19 +12,23 @@ img {
 
 }
 
-.section_body {
-  width: 100%;
-  padding-top: 100%;
+.boxTest {
+  position: relative;
+  max-height: 500px;
+  padding-left: 50%;
+  border: 3px solid blue;
+
 }
 
-.section_body h2 h4 {
+.section_body {
   position: absolute;
+  margin-right: 20px;
   color: white;
-  top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  border: 3px solid green;
+
 }
+
 
 
 .hidden {
