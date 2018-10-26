@@ -1,26 +1,22 @@
-.test {
-  background-color: red;
-}
-
-.test2 {
-  background-color: green;
-}
 
 
-/* .navbar {
-  position: absolute;
-  overflow: hidden;
+.navbar {
   max-width: 100%;
-  margin-top: 0px;
-  z-index: 9;
-} */
+  /* Padding set at zero keeps child divs spanning entire width */
+  /* Allows child divs own padding in their container */
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
 
 /* the class is given a value once scroll is not at top of page */
 /* the class of the entire toolbar */
 /* I think once scroll goes down the toolbar locks
 to the top and is fixed */
 
-  #promotion {
+  .navbar #promotion {
+  width: 100%;
   background-color: #00BCD4;
   color: #ffffff;
   text-align: center;
@@ -37,16 +33,17 @@ to the top and is fixed */
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #ffffff;
 }
 
-#toolbar {
+  .toolbar_offset {
   width: 100%;
-  margin-top: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffff;
 }
 
-#toolbar img {
+.toolbar_offset img {
   display: block;
+  padding-left: 10px;
 }

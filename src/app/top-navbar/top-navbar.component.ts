@@ -13,12 +13,12 @@ export class TopNavbarComponent {
 @HostListener('window:scroll') onWindowScroll(event) {
     console.log("scrolling...");
     console.log(window.scrollY);
-    if(window.scrollY < 2){
+    if(window.scrollY == 0){
       // alert("test");
-      return "test";
+      return "toolbar_offset";
     } else {
       // alert("test2");
-      return "test2";
+      return "toolbar_fixed";
     }
 }
 }
