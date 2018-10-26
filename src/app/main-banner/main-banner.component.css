@@ -1,0 +1,36 @@
+.section_images {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  right: -100%;
+  margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 639px) {
+  .mobile-show {
+      display: block !important;
+  }
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 640px) {
+  .tablet-show {
+      display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-show {
+      display: block !important;
+  }
+}
+
+/* .mobile-show {
+    display: block !important;
+} */
