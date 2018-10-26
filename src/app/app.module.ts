@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
+import { MainBannerComponent } from './main-banner/main-banner.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavbarComponent
+    TopNavbarComponent,
+    MainBannerComponent
   ],
   imports: [
     BrowserModule
