@@ -9,8 +9,15 @@ import * as $ from 'jquery';
 export class TopNavbarComponent {
 
 
+
 @HostListener('window:scroll', ['$event'])
 onWindowScroll($event) {
     console.log("scrolling...");
+    console.log(window.scrollY);
+    if(window.scrollY < 2){
+      return "toolbar_fixed";
+    } else {
+      return "";
+    }
 }
 }

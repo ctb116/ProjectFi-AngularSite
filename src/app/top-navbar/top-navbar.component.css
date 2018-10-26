@@ -1,13 +1,13 @@
 
 
 
-.navbar {
+/* .navbar {
   position: absolute;
   overflow: hidden;
   max-width: 100%;
   margin-top: 0px;
   z-index: 9;
-}
+} */
 
 /* the class is given a value once scroll is not at top of page */
 /* the class of the entire toolbar */
@@ -25,9 +25,15 @@ to the top and is fixed */
   font-size: 14px;
 }
 
-.navbar #toolbar {
+.toolbar_fixed {
   position: fixed;
   top: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#toolbar {
   width: 100%;
   margin-top: 45px;
   padding-top: 10px;
