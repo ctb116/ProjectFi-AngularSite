@@ -3,6 +3,18 @@ Specs:
 Components In Progress:
 - main banner: text does not stay in relative position to image when screen resize
 
+NavBar Component Specs:
+- navbar changes based on screen size
+  on desktop view it goes (logo, Plan, Phones, Coverage, FAQ, FI FIT QUIZ, Sign in, Get Fi)
+- if navbar is less than desktop size the above (expect for logo and the buttons go away)
+  a menu icon appears on the left side of the fi_logo
+  clicking on that icon brings up remove menu items along with the buttons
+- navbar is locked at the top of the screen when scrolling
+- blue promotion bar is not locked but is aboe the navbar
+- if menu icon is clicked user can only scroll in that menu, the main view is greyout and locked
+
+
+
 
 Components - Homepage -
  - top nav bar that always stays (keep in main index)

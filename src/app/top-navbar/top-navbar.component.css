@@ -1,0 +1,31 @@
+
+.navbar {
+  position: absolute;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 0px;
+  z-index: 9;
+}
+
+  #promotion {
+  background-color: #00BCD4;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 16px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.navbar #toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 45px;
+  background-color: #ffffff;
+}
+
+#toolbar img {
+  display: block;
+}
