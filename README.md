@@ -1,3 +1,32 @@
+Specs:
+
+Components - Homepage -
+ - top nav bar that always stays (keep in main index)
+ - small blue bar with latest deals (in main index) goes away after scroll down
+
+ - top big image on every page (expect FAQ)
+ -- has auto filtering through images with additional arrow click
+
+ - twitter customer review
+
+ - image left / text right
+ - text left / image right
+ (both above have a fade in of text has user scrolls down (title)(content)(button))
+
+ - site spanning banner (green one) with hover activated button
+
+ - stay informed(transparent background (icon)(content)(button))
+ --repeats on several pages
+
+ -grey footer
+
+
+
+
+
+
+
+
 # ProjectFi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
