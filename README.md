@@ -24,6 +24,9 @@ Components - Homepage -
 
  -grey footer
 
+ Implementing multiple pages
+ - ng methods in the compoents that return which text and images to display given a page click input
+
 
 
 
