@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-top-navbar',
   templateUrl: './top-navbar.component.html',
   styleUrls: ['./top-navbar.component.css']
 })
-export class TopNavbarComponent implements OnInit {
+export class TopNavbarComponent {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
-
+@HostListener('window:scroll', ['$event'])
+onWindowScroll($event) {
+    console.log("scrolling...");
+}
 }

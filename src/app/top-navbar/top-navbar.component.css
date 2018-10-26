@@ -1,4 +1,6 @@
 
+
+
 .navbar {
   position: absolute;
   overflow: hidden;
@@ -6,6 +8,11 @@
   margin-top: 0px;
   z-index: 9;
 }
+
+/* the class is given a value once scroll is not at top of page */
+/* the class of the entire toolbar */
+/* I think once scroll goes down the toolbar locks
+to the top and is fixed */
 
   #promotion {
   background-color: #00BCD4;
