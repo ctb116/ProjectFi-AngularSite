@@ -6,6 +6,12 @@ Friday 10/23/18 - finish navbar, particularly hide/show of promotional message b
 
 ###### 2) top-navbar: scroll position alters the class value but the transition is too jarring. (maybe try Angular animations?)
 
+
+Next steps: create routes for each page (each a component)
+            created child components for visual features (just the formatting) send formatting up to parents
+            app parent sends formating down to page components
+            create instances of components in the parent app and send back to page components - in page component only use needed instance
+
 Components - Homepage:
 
 _NavBar Component Specs:</br>

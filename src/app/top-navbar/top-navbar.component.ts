@@ -10,7 +10,7 @@ export class TopNavbarComponent {
 
 
 
-@HostListener('window:scroll') onWindowScroll(event) {
+@HostListener('window:scroll') onWindowScroll() {
     console.log("scrolling...");
     console.log(window.scrollY);
     if(window.scrollY == 0){
