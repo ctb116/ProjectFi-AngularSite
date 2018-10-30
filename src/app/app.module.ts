@@ -1,20 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { routing } from './app.routing';
 
 
 import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { MainBannerComponent } from './main-banner/main-banner.component';
+import { AboutComponent } from './about/about.component';
+import { PlanComponent } from './plan/plan.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
-    MainBannerComponent
+    MainBannerComponent,
+    AboutComponent,
+    PlanComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
