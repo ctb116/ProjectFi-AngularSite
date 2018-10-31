@@ -9,7 +9,7 @@ import { QuizComponent } from './quiz/quiz.component';
 
 const appRoutes: Routes = [
   {
-  path: 'about',
+  path: '',
   component: AboutComponent
   },
   {
