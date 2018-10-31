@@ -8,6 +8,10 @@ import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { MainBannerComponent } from './main-banner/main-banner.component';
 import { AboutComponent } from './about/about.component';
 import { PlanComponent } from './plan/plan.component';
+import { PhonesComponent } from './phones/phones.component';
+import { CoverageComponent } from './coverage/coverage.component';
+import { FaqComponent } from './faq/faq.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { PlanComponent } from './plan/plan.component';
     TopNavbarComponent,
     MainBannerComponent,
     AboutComponent,
-    PlanComponent
+    PlanComponent,
+    PhonesComponent,
+    CoverageComponent,
+    FaqComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,

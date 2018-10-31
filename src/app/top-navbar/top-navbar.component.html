@@ -1,14 +1,25 @@
 <header>
-  <div class="navbar">
+  <div class="navWrapper">
     <div id="promotion">
       <p>promotion text here</p>
     </div>
 
-    <div [class]="onWindowScroll()">
-      <img id="filogo" src="./assets/img/fi_logo.svg">
 
-        <button class="btn" id="button_transparent">SIGN IN</button>
-        <button class="btn" id="button_green">GET FI</button>
+    <div [class]="onWindowScroll()">
+      <nav class="navbar navbar-expand-lg">
+        <img id="filogo" src="./assets/img/fi_logo.svg">
+        <div class="navbar-nav">
+          <a class="nav-link" routerLink="plan">PLAN</a>
+          <a class="nav-link" routerLink="phones">PHONES</a>
+          <a class="nav-link" routerLink="coverage">COVERAGE</a>
+          <a class="nav-link" routerLink="faq">FAQ</a>
+          <a class="nav-link" routerLink="quiz">FI FIT QUIZ</a>
+        </div>
+        <div class="buttonBox">
+          <button class="btn" id="button_transparent">SIGN IN</button>
+          <button class="btn" id="button_green">GET FI</button>
+        </div>
+      </nav>
     </div>
 
   </div>

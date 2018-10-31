@@ -1,8 +1,48 @@
-/* .navbar_buttons {
-  right: 0px;
-  border: 2px solid red;
-} */
+/* Parent container for all */
+.navWrapper {
+  max-width: 100%;
+  /* Padding set at zero keeps child divs spanning entire width */
+  /* Allows child divs own padding in their container */
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
 
+/* first CHILD */
+.navWrapper #promotion {
+width: 100%;
+background-color: #00BCD4;
+color: #ffffff;
+text-align: center;
+/* padding to adjust size of promo bar */
+padding-top: 5px;
+padding-right: 16px;
+padding-bottom: 0px;
+padding-left: 16px;
+font-size: 14px;
+}
+
+/* first CHILD */
+.navbar {
+  /* border: 3px solid purple; */
+}
+/* second CHILD inside .navBar*/
+.navbar-nav {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+/* second CHILD inside .navBar*/
+.buttonBox {
+  position: absolute;
+  right: 0px;
+  padding-right: 5px;
+}
+/* third CHILD inside .buttonBox */
 #button_green {
   color: #ffffff;
   background-color: #0f9d58;
@@ -23,47 +63,27 @@
   letter-spacing: 0.75px;
 }
 
-.navbar {
-  max-width: 100%;
-  /* Padding set at zero keeps child divs spanning entire width */
-  /* Allows child divs own padding in their container */
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
 
 /* the class is given a value once scroll is not at top of page */
 /* the class of the entire toolbar */
 /* I think once scroll goes down the toolbar locks
 to the top and is fixed */
 
-  .navbar #promotion {
-  width: 100%;
-  background-color: #00BCD4;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 5px;
-  padding-right: 16px;
-  padding-bottom: 5px;
-  padding-left: 16px;
-  font-size: 14px;
-}
 
 .toolbar_fixed {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   background-color: #ffffff;
   z-index: 99999;
 }
 
   .toolbar_offset {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   background-color: #ffffff;
   z-index: 99999;
 }
