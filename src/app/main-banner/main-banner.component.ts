@@ -10,13 +10,24 @@ import { MainBanner } from '../models/main-banner.model';
   providers: [MainBannerService]
 })
 export class MainBannerComponent implements OnInit {
+
   mainBannerInfo: MainBanner;
 
-  constructor(private router: Router, private mainBannerService: MainBannerService) {}
+  constructor(private router: Router,
+              private mainBannerService: MainBannerService
+             ) {}
 
   ngOnInit() {
-    this.mainBannerInfo = this.mainBannerService.getMainBannerAbout();
+  if(this.router.url === '/') {
+  this.mainBannerInfo = this.mainBannerService.getMainBannerAbout();
+  console.log(this.router.url);
   }
+  if(this.router.url === '/plan') {
+    this.mainBannerInfo = this.mainBannerService.getMainBannerPlan();
+    console.log(this.router.url);
+  }
+  //phones, coverage, faq, quiz
+}
 
 
 }

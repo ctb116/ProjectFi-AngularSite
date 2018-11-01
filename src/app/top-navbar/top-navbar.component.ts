@@ -11,8 +11,8 @@ export class TopNavbarComponent {
 
 
 @HostListener('window:scroll') onWindowScroll() {
-    console.log("scrolling...");
-    console.log(window.scrollY);
+    // console.log("scrolling...");
+    // console.log(window.scrollY);
     if(window.scrollY == 0){
       // alert("test");
       return "toolbar_offset";
