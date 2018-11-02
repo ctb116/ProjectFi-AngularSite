@@ -1,45 +1,33 @@
-Goal:
-Friday 10/23/18 - finish navbar, particularly hide/show of promotional message based on scroll location (done)
+## Project Fi - Website Remake with Angular
+#### By _**Catherine Bradley**_
+---
+##### Description
+_In this application I recreate Google's Project Fi website using Angular 5.2.11_
 
-## Components In Progress:
-###### 1) main-banner: text does not stay in relative position to image when screen resize
+##### Setup/Installation Requirements
 
-###### 2) top-navbar: scroll position alters the class value but the transition is too jarring. (maybe try Angular animations?)
+    clone this repository
+    type "ng serve" in the root directory of the project folder
+    open localhost:4200 in your browser
 
 
-Next steps: create routes for each page (each a component)
-            created child components for visual features (just the formatting) send formatting up to parents
-            app parent sends formating down to page components
-            create instances of components in the parent app and send back to page components - in page component only use needed instance
+or follow this link: https://project-fi-eb395.firebaseapp.com/about/
 
-Components - Homepage:
+#####  Additional work to be done
 
-_NavBar Component Specs:</br>
-- navbar changes based on screen size: </br>
-    navbar on desktop view looks like (logo, [Plan, Phones, Coverage, FAQ, Fi FIT QUIZ]links, [Sign in, Get Fi]buttons) </br>
-    if navbar is less than desktop size the above (expect logo and Get Fi button) is removed </br>
-    a menu icon appears on the left side of the logo in tablet and mobile view </br>
-    clicking that menu icon opens a side menu containing removed items mentioned above
-    While in the side menu, the main window is locked and dimmed. Scrolling is only allowed in the side menu while it's opened.
-- navbar is fixed at the top of the screen when scrolling down </br>
-  if user is at top of page, the navbar is offset and blue promotional banner appears</br>_
+* _Add additional components needed to complete features on each page_
+* _Currently site information is stored locally. Add functionality to store and access that information from firebase database_
+* _Add needed styling to replicate project fi website_
 
-At-a-glance Component Specs:
- - top big image on every page (expect FAQ)
- -- has auto filtering through images with additional arrow click
+#####  Support and contact details
 
- - twitter customer review
+_catherinetybradley@gmail.com_
+#####  Technologies Used
 
- - image left / text right
- - text left / image right
- (both above have a fade in of text has user scrolls down (title)(content)(button))
+* _Angular_
+* _NPM_
+* _Firebase_
 
- - site spanning banner (green one) with hover activated button
+#####  Legal
 
- - stay informed(transparent background (icon)(content)(button))
- --repeats on several pages
-
- -grey footer
-
- Implementing multiple pages
- - ng methods in the compoents that return which text and images to display given a page click input
+*NA*
