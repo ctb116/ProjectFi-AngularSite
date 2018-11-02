@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainBannerService } from '../main-banner.service';
 import { MainBanner } from '../models/main-banner.model';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-main-banner',
@@ -12,7 +12,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class MainBannerComponent implements OnInit {
 
-  mainBannerInfo: MainBanner;
+  mainBannerInfo: FirebaseObjectObservable<any[]>;
 
   constructor(private router: Router,
               private mainBannerService: MainBannerService
