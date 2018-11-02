@@ -1,0 +1,16 @@
+{ "mainbanner": [ {
+  "imageDesktop": "about/hero-furry-desktop.jpg",
+  "imageTablet": "about/hero-furry-tablet.jpg",
+  "imageMobile": "about/hero-furry-mobile.jpg",
+  "headerText:": "Project Fi, a phone plan from Google",
+  "bodyText": "Meet the phone plan you'll want to snuggle up with.",
+  "bannerButton": "button"
+}, {
+  "imageDesktop": "plan/cone_2_web.jpg",
+  "imageTablet": "plan/cone_2_tablet.jpg",
+  "imageMobile": "plan/cone_2_mobile.jpg",
+  "headerText:": "Bill Protection makes saving twice as sweet",
+  "bodyText": "Bill Protection gives you the peace of mind of unlimited data when you need it without having to pay for it when you don’t.",
+  "bannerButton": "button"
+  }]
+}

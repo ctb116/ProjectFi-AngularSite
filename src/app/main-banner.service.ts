@@ -2,18 +2,26 @@ import { Injectable } from '@angular/core';
 import { MainBanner } from './models/main-banner.model';
 import { MAINBANNER } from './mock-pageinfo';
 import { AboutComponent } from './about/about.component';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class MainBannerService {
 
-  constructor() { }
+  mainBanner: FirebaseListObservable<any[]>;
+
+  //makes firebase database available to use
+  constructor(private database: AngularFireDatabase) {
+    //defines what we want from the database
+    this.mainBanner = database.list('mainbanner');
+  }
 
   getMainBannerPlan() {
-    return MAINBANNER[1];
+    console.log(this.mainBanner);
+    return this.mainBanner;
   }
 
   getMainBannerAbout() {
-    return MAINBANNER[0];
+    return this.mainBanner;
   }
 
   //I want one function in here to
