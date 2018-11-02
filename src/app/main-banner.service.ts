@@ -1,39 +1,19 @@
 import { Injectable } from '@angular/core';
 import { MainBanner } from './models/main-banner.model';
-// import { MAINBANNER } from './mock-pageinfo';
-import { AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
+import { MAINBANNER } from './mock-pageinfo';
 
 @Injectable()
 export class MainBannerService {
 
-  mainBanner: FirebaseListObservable<any[]>;
+  constructor() { }
 
-  //makes firebase database available to use
-  constructor(private database: AngularFireDatabase) {
-    //defines what we want from the database
-    this.mainBanner = database.list('/mainbanner/');
-    console.log(this.mainBanner);
-    console.log(this.mainBanner[1]);
+  getMainBannerPlan() {
+    return MAINBANNER[1];
   }
 
-  getMainBannerAll() {
-    return this.mainBanner;
+  getMainBannerAbout() {
+    return MAINBANNER[0];
   }
-
-//   var ref = new firebase("https://dinosaur-facts.firebaseio.com/dinosaurs");
-// ref.orderByChild("dimensions/height").on("child_added", function(snapshot) {
-//   console.log(snapshot.key() + " was " + snapshot.val().height + " meters tall");
-// });
-
-  // getMainBannerPlan() {
-  //   (this.mainBanner).orderByChild("0").on("child_added", function(snapshot) {
-  //     console.log(snapshot)
-  //   });
-  // }
-  //
-  // getMainBannerAbout() {
-  //   return this.mainBanner;
-  // }
 
   //I want one function in here to
   //recieve the correct mainbanner information

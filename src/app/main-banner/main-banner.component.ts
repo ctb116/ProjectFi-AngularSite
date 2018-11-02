@@ -12,7 +12,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class MainBannerComponent implements OnInit {
 
-  mainBannerInfo: FirebaseListObservable<any[]>;
+  mainBannerInfo: MainBanner;
 
   constructor(private router: Router,
               private mainBannerService: MainBannerService
