@@ -26,6 +26,10 @@ export class MainBannerComponent implements OnInit {
   if(this.router.url === '/plan') {
     this.mainBannerInfo = this.mainBannerService.getMainBannerPlan();
     console.log(this.router.url);
+  } if(this.router.url === '/coverage') {
+    this.mainBannerInfo = this.mainBannerService.getMainBannerCoverage();
+  } if(this.router.url === '/quiz') {
+    this.mainBannerInfo = this.mainBannerService.getMainBannerQuiz();
   }
   //phones, coverage, faq, quiz
 }

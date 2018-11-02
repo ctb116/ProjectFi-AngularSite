@@ -15,6 +15,14 @@ export class MainBannerService {
     return MAINBANNER[0];
   }
 
+  getMainBannerCoverage() {
+    return MAINBANNER[2];
+  }
+
+  getMainBannerQuiz() {
+    return MAINBANNER[3];
+  }
+
   //I want one function in here to
   //recieve the correct mainbanner information
   //to send to the main-banner.component
